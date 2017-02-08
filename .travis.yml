@@ -1,12 +1,5 @@
 language: cpp
 compiler: gcc
-addons:
-    apt:
-        soruces:
-            - ubuntu-toolchain-r-test
-        packages:
-            - cmake
-            - buildtools
 before_script:
     - ./nova.sh setup
 script: 
