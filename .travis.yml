@@ -1,1 +1,25 @@
 language: cpp
+compiler: gcc
+addons:
+    apt:
+        soruces:
+            - ubuntu-toolchain-r-test
+        packages:
+            - cmake
+            - buildtools
+            - java-8
+            - vulkan
+            - g++-5
+            - gcc-5
+            - clang-3.3
+before_script:
+    - ./nova.sh setup
+script: 
+    - mkdir build 
+    - cd build
+    - cmake .. && make
+git:
+    depth: 3
+sudo: required
+dist: trusty
+
