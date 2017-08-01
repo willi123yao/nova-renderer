@@ -1,6 +1,6 @@
 language: java
 install: 
-    - cp ./1.10-Nova.json ~/.minecraft/versions/1.10/1.10.json
+    - mkdir -p ~/.minecraft/versions/1.10 && cp ./1.10-Nova.json ~/.minecraft/versions/1.10/1.10.json
     - sudo bash gradlew setup
 script: 
     - ls
