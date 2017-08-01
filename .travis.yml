@@ -1,5 +1,5 @@
 language: generic
 script: 
-    - ./gradlew
+    - sudo ./gradlew
 sudo: required
 dist: trusty
