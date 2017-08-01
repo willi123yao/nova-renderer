@@ -1,6 +1,7 @@
-language: generic
+language: java
+install: sudo bash gradlew setup
 script: 
     - ls
-    - sudo bash gradlew
+    - sudo bash gradlew build
 sudo: required
 dist: trusty
